@@ -1,0 +1,31 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<windows.h>
+#include <stdio.h>
+
+int main() {
+    while (1) {
+        // 读取一组数据
+        int n, num, sum = 0;
+        scanf("%d", &n);
+        // 判断是否输入结束
+        if (n == 0) 
+        {
+            break;
+        }
+        // 计算该组数据的和
+        for (int i = 0; i < n; ++i) 
+        {
+            scanf("%d", &num);
+            sum += num;
+        }
+
+        // 输出结果
+        printf("%d\n", sum);
+    }
+
+
+    return 0;
+}
